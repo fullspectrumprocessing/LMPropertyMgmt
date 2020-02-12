@@ -1,0 +1,52 @@
+@import '../styles/custom-media.css';
+
+.heroDiv {
+  box-sizing: border-box;
+  position: relative;
+width: 100vw;
+  padding: 0em;
+  margin: 0 auto;
+
+  @media (--media-min-small) {
+    padding: 0em;
+    /* max-height: 600px; */
+    /* object-position: bottom !important; */
+  }
+}
+
+.image {
+    height: 450px;
+    position: relative;
+    /* object-position: bottom !important; */
+    @media (--media-min-medium) {
+   height: 700px
+      }
+}
+
+.overlay {
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: black; */
+    background: #274076;
+    opacity: .8;
+    /* filter: blur(40px); */
+
+    /* object-position: bottom !important; */
+    @media (--media-min-medium) {
+   height: 700px
+      }
+}
+
+.headingText {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: white;
+    
+}
+
