@@ -23,7 +23,7 @@ const HomeTextSec = () => {
     <>
     <div className={styles.firstDiv}>
       <div className={styles.textWrap}>
-      <p> Have a question or need anything? </p> 
+      <p> Have a question or need anything? Test</p> 
       <p>Our responsive team are here to talk to you. </p>
       </div>
       <button className={styles.contactButton}>Contact Us</button>
