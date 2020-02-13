@@ -39,16 +39,16 @@ export default {
       description:
         'This ends up on summary pages, on Google, when people share your post in social media.'
     },
-    {
-      name: 'authors',
-      title: 'Authors',
-      type: 'array',
-      of: [
-        {
-          type: 'authorReference'
-        }
-      ]
-    },
+    // {
+    //   name: 'authors',
+    //   title: 'Authors',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       type: 'authorReference'
+    //     }
+    //   ]
+    // },
     {
       name: 'categories',
       type: 'array',
