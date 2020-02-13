@@ -63,9 +63,44 @@ export default {
       ]
     },
     {
-      name: 'body',
+      name: 'description',
       type: 'bodyPortableText',
-      title: 'Body'
+      title: 'description'
+    },
+    {
+      name: 'price',
+      type: 'number',
+      title: 'price'
+    },
+    {
+      name: 'bedrooms',
+      type: 'number',
+      title: 'bedrooms'
+    },
+    {
+      name: 'bathrooms',
+      type: 'number',
+      title: 'bathrooms'
+    },
+    {
+      name: 'square feet',
+      type: 'number',
+      title: 'square feet'
+    },
+    {
+      name: 'neighborhood',
+      type: 'string',
+      title: 'neighborhood'
+    },
+    {
+      name: 'address',
+      type: 'string',
+      title: 'address'
+    },
+    {
+      name: 'date available',
+      type: 'string',
+      title: 'date available'
     }
   ],
   orderings: [
