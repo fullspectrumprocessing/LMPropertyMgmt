@@ -83,9 +83,9 @@ export default {
       title: 'bathrooms'
     },
     {
-      name: 'square feet',
+      name: 'squareFeet',
       type: 'number',
-      title: 'square feet'
+      title: 'square Feet'
     },
     {
       name: 'neighborhood',
@@ -98,7 +98,7 @@ export default {
       title: 'address'
     },
     {
-      name: 'date available',
+      name: 'dateAvailable',
       type: 'string',
       title: 'date available'
     }
