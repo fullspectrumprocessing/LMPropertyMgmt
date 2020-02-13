@@ -85,7 +85,7 @@ export default {
     {
       name: 'squareFeet',
       type: 'number',
-      title: 'square Feet'
+      title: 'squareFeet'
     },
     {
       name: 'neighborhood',
@@ -100,7 +100,7 @@ export default {
     {
       name: 'dateAvailable',
       type: 'string',
-      title: 'date available'
+      title: 'dateAvailable'
     }
   ],
   orderings: [
