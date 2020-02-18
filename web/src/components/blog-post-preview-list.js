@@ -8,25 +8,14 @@ function BlogPostPreviewGrid (props) {
   return (
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
-      {/* <ul className={styles.grid}>
+      <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
-          
             <li key={node.id}>
               <BlogPostPreview {...node} isInList />
-              {console.log(node)}
             </li>
           ))}
-      </ul> */}
-          <ul className={styles.grid}>
-        
-          
-        <li key={props.nodes[0].id}>
-          <BlogPostPreview {...props.nodes[0]} isInList />
-          {console.log(props.nodes[0])}
-        </li>
-    
-  </ul>
+      </ul>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
           <Link to="/properties">See All Listings</Link>

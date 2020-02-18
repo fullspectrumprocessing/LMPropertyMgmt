@@ -16,8 +16,6 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-    `gatsby-plugin-sharp`, 
-    `gatsby-transformer-sharp`,
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
