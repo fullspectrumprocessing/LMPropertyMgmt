@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 // import heroImage from "../images/lmpmLogo.png";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "./home-text-sec.module.css";
-import {Link} from 'gatsby'
+import { Link } from "gatsby";
 
 const HomeTextSec = () => {
   const data = useStaticQuery(graphql`
@@ -18,26 +18,36 @@ const HomeTextSec = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
-    <div className={styles.firstDiv}>
-      <div className={styles.textWrap}>
-      <p> Have a question or need anything? Test</p> 
-      <p>Our responsive team are here to talk to you. </p>
+      <div className={styles.firstDiv}>
+        <div className={styles.textWrap}>
+          <p> Have a question or need anything? Test</p>
+          <p>Our responsive team are here to talk to you. </p>
+        </div>
+        <button className={styles.contactButton}>Contact Us</button>
       </div>
-      <button className={styles.contactButton}>Contact Us</button>
+      <div className={styles.secWrapper}>
+        <div className={styles.textBox}>
+          <p className={styles.textHome}>
+            When you rent from us you can switch to any of our 125 units at 23 different locations
+            with No background checks and No new applications. Look though{" "}
+            <Link className={styles.link} to="/properties">
+              Our Portfolio.{" "}
+            </Link>
+          </p>
+        </div>
+        <div className={styles.imageWrap}>
+          <Img
+            className={styles.image}
+            fluid={data.building.childImageSharp.fluid}
+            alt="brick building"
+          />
+        </div>
       </div>
-    <div className={styles.secWrapper}>
-      <div className={styles.textBox}>
-        <p className={styles.textHome}>When you rent from us you can switch to any of our 125 units at 23 different locations with No background checks and No new applications. Look though <Link className={styles.link} to="/properties">Our Portfolio. </Link></p>
-      </div>
-      <div className={styles.imageWrap}>
-        <Img  className={styles.image} fluid={data.building.childImageSharp.fluid} alt="brick building"/>
-      </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
 export default HomeTextSec;

@@ -10,6 +10,8 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import HomeHero from '../components/home-hero'
+import HomeTextSec from '../components/home-text-sec'
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -95,11 +97,13 @@ const IndexPage = props => {
         description={site.description}
         keywords={site.keywords}
       />
+      <HomeHero />
+      <HomeTextSec />
       <Container>
-        <h1 >Here is the Title</h1>
+        {/* <h1 >Here is the Title</h1> */}
         {postNodes && (
           <BlogPostPreviewList
-            title='Latest blog posts'
+            title='Checkout Property Listings'
             nodes={postNodes}
             browseMoreHref='/archive/'
           />
