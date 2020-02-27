@@ -9,8 +9,9 @@ import AuthorList from './author-list'
 import styles from './blog-post.module.css'
 
 function BlogPost (props) {
+  console.log(props)
   // const {_rawBody, authors, categories, title, mainImage, publishedAt} = props
-  const {authors, categories, title, mainImage, publishedAt} = props
+  const {authors, categories, title, mainImage, publishedAt, _rawDescription, price, bedrooms, bathrooms, neighborhood, squareFeet, address, dateAvailable} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -30,28 +31,27 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
+            <h3>{_rawDescription[0].children[0].text}</h3>
             {/* {_rawBody && <PortableText blocks={_rawBody} />} */}
             {<PortableText />}
           </div>
           <aside className={styles.metaContent}>
-            {publishedAt && (
+            {/* {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? distanceInWords(new Date(publishedAt), new Date())
                   : format(new Date(publishedAt), 'MMMM Do, YYYY')}
               </div>
-            )}
-            {authors && <AuthorList items={authors} title='Authors' />}
-            {categories && (
-              <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Categories</h3>
-                <ul>
-                  {categories.map(category => (
-                    <li key={category._id}>{category.title}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            )} */}
+            {console.log(_rawDescription[0].children[0].text)}
+          <h3>${price}</h3>
+          <hr></hr>
+          {/* <h3>{_rawDescription[0].children[0].text}</h3> */}
+            <div >{bedrooms} Bed/{bathrooms} Bath</div>
+            <div>{squareFeet} Sq. Feet</div>
+            <hr></hr>
+            <div>{neighborhood}</div>
+            <div>{dateAvailable}</div>
           </aside>
         </div>
       </Container>

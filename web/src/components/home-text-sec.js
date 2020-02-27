@@ -23,8 +23,8 @@ const HomeTextSec = () => {
     <>
       <div className={styles.firstDiv}>
         <div className={styles.textWrap}>
-          <p> Have a question or need anything? Test</p>
-          <p>Our responsive team are here to talk to you. </p>
+          <p> Have a question? </p>
+          <p>Our responsive team is here to talk to you. </p>
         </div>
         <button className={styles.contactButton}>Contact Us</button>
       </div>
@@ -32,9 +32,9 @@ const HomeTextSec = () => {
         <div className={styles.textBox}>
           <p className={styles.textHome}>
             When you rent from us you can switch to any of our 125 units at 23 different locations
-            with No background checks and No new applications. Look though{" "}
+            with no background checks and no new applications. Look though{" "}
             <Link className={styles.link} to="/properties">
-              Our Portfolio.{" "}
+              Our Listings.{" "}
             </Link>
           </p>
         </div>
