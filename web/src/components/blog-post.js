@@ -43,7 +43,7 @@ function BlogPost (props) {
                   : format(new Date(publishedAt), 'MMMM Do, YYYY')}
               </div>
             )} */}
-            {console.log(_rawDescription[0].children[0].text)}
+            {/* {console.log(_rawDescription[0].children[0].text)} */}
           <h3>${price}</h3>
           <hr></hr>
           {/* <h3>{_rawDescription[0].children[0].text}</h3> */}
