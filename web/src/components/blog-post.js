@@ -31,7 +31,7 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <h3>{_rawDescription[0].children[0].text}</h3>
+            {/* <h3>{_rawDescription[0].children[0].text}</h3> */}
             {/* {_rawBody && <PortableText blocks={_rawBody} />} */}
             {<PortableText />}
           </div>
