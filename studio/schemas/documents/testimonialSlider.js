@@ -1,5 +1,5 @@
 export default {
-  name: 'images',
+  name: 'testimonialSlider',
   title: 'Testimonial slider',
   type: 'object',
   fields: [
