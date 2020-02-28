@@ -1,5 +1,5 @@
 export default {
-  name: 'mainImage',
+  name: 'postImage1',
   type: 'image',
   title: 'Image',
   options: {
