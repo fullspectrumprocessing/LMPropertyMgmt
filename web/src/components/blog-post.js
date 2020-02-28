@@ -33,6 +33,7 @@ function BlogPost (props) {
             <h1 className={styles.title}>{title}</h1>
             {/* <h3>{_rawDescription[0].children[0].text}</h3> */}
             {/* {_rawBody && <PortableText blocks={_rawBody} />} */}
+                 {_rawDescription && <PortableText blocks={_rawDescription} />}
             {<PortableText />}
           </div>
           <aside className={styles.metaContent}>

@@ -27,7 +27,7 @@ function BlogPostPreview (props) {
         )}
       </div>
       <div className={styles.text}>
-        {console.log(props.bathrooms)}
+        {console.log(props._rawExcerpt)}
         <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
         <h2 className={cn(responsiveTitle3, styles.title)}>${props.price}</h2>
         <h2 className={cn(responsiveTitle3, styles.title)}>{props.bedrooms} Bed/{props.bathrooms} Bath</h2>
