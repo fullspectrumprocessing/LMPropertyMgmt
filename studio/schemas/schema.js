@@ -9,7 +9,7 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
-import images from './documents/images'
+import images from './documents/testimonialSlider'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -18,6 +18,7 @@ import excerptPortableText from './objects/excerptPortableText'
 import mainImage from './objects/mainImage'
 import authorReference from './objects/authorReference'
 import imagesReference from './objects/imagesReference'
+import testimonialSlider from './documents/testimonialSlider'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,7 +33,7 @@ export default createSchema({
     post,
     category,
     author,
-    images,
+    testimonialSlider,
     mainImage,
     authorReference,
     bodyPortableText,
