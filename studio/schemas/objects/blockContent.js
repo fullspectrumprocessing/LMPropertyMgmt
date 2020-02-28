@@ -1,5 +1,6 @@
 export default {
-  name: 'imagesReference',
+  name: 'blockContent',
+  title: 'Block content',
   type: 'array',
   of: [
     {
