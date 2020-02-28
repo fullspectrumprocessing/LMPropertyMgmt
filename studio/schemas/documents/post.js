@@ -1,4 +1,4 @@
-import {format} from 'date-fns'
+import { format } from 'date-fns'
 
 export default {
   name: 'post',
@@ -101,6 +101,32 @@ export default {
       name: 'dateAvailable',
       type: 'string',
       title: 'dateAvailable'
+    },
+    {
+      name: 'testimonialSlider',
+      title: 'Testimonial slider',
+      type: 'object',
+      fields: [
+        {
+          name: 'slider',
+          title: 'Slider',
+          type: 'array',
+          of: [
+            {
+              name: 'testimonial',
+              title: 'Testimonial',
+              type: 'object',
+              fields: [
+                {
+                  name: 'image',
+                  title: 'Image',
+                  type: 'image'
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   orderings: [
@@ -140,7 +166,7 @@ export default {
       slug: 'slug',
       media: 'mainImage'
     },
-    prepare ({title = 'No title', publishedAt, slug = {}, media}) {
+    prepare({ title = 'No title', publishedAt, slug = {}, media }) {
       const dateSegment = format(publishedAt, 'YYYY/MM')
       const path = `/${dateSegment}/${slug.current}/`
       return {
