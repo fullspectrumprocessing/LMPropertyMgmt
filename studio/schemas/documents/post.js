@@ -32,11 +32,11 @@ export default {
       type: 'mainImage',
       title: 'Main image'
     },
-    {
-      name: 'postImage1',
-      type: 'postImage1',
-      title: 'Post image 1'
-    },
+    // {
+    //   name: 'postImage1',
+    //   type: 'postImage1',
+    //   title: 'Post image 1'
+    // },
     {
       name: 'excerpt',
       type: 'excerptPortableText',
