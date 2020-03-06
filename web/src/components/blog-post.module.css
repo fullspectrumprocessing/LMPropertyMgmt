@@ -7,6 +7,15 @@
   composes: responsiveTitle1 from './typography.module.css';
 }
 
+.imageWrap {
+  width: 100%;
+  background: black;
+
+}
+.carousel-dots li button:before {
+  color: white !important;
+}
+
 .mainImage {
   display: block;
   position: relative;
@@ -25,6 +34,22 @@
   }
 }
 
+.imagesDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.sliderWrapper {
+
+  max-width: 800px;
+  background: black;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.carousel-dots {
+  color: white;
+}
 .grid {
   @media (--media-min-medium) {
     display: grid;
