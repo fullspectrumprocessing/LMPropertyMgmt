@@ -52,6 +52,14 @@ export default {
     {
       type: 'postImage1',
       options: {hotspot: true}
+    },
+    {
+      type: 'postImage2',
+      options: {hotspot: true}
+    },
+    {
+      type: 'postImage3',
+      options: {hotspot: true}
     }
   ]
 }
