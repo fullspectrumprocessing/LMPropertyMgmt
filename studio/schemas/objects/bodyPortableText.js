@@ -48,6 +48,10 @@ export default {
     {
       type: 'mainImage',
       options: {hotspot: true}
+    },
+    {
+      type: 'postImage1',
+      options: {hotspot: true}
     }
   ]
 }
