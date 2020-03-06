@@ -17,6 +17,8 @@ import excerptPortableText from './objects/excerptPortableText'
 import mainImage from './objects/mainImage'
 import authorReference from './objects/authorReference'
 import postImage1 from './objects/postImage1'
+import postImage2 from './objects/postImage2'
+import postImage3 from './objects/postImage3'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,6 +34,8 @@ export default createSchema({
     category,
     author,
     postImage1,
+    postImage2,
+    postImage3,
     mainImage,
 
     authorReference,

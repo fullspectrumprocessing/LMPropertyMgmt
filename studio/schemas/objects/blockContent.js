@@ -1,13 +1,13 @@
-export default {
-  name: 'blockContent',
-  title: 'Block content',
-  type: 'array',
-  of: [
-    {
-      type: 'block'
-    },
-    {
-      type: 'testimonialSlider'
-    }
-  ]
-}
+// export default {
+//   name: 'blockContent',
+//   title: 'Block content',
+//   type: 'array',
+//   of: [
+//     {
+//       type: 'block'
+//     },
+//     {
+//       type: 'testimonialSlider'
+//     }
+//   ]
+// }
