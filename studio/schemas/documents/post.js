@@ -38,6 +38,16 @@ export default {
       title: 'Post image 1'
     },
     {
+      name: 'postImage2',
+      type: 'postImage2',
+      title: 'Post image 2'
+    },
+    {
+      name: 'postImage3',
+      type: 'postImage3',
+      title: 'Post image 3'
+    },
+    {
       name: 'excerpt',
       type: 'excerptPortableText',
       title: 'Excerpt',
