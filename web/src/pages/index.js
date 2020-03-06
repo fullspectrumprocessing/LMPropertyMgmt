@@ -105,7 +105,6 @@ const IndexPage = props => {
       <HomeHero />
       <HomeTextSec />
       <Container>
-        <h1>Test</h1>
         {/* <h1 >Here is the Title</h1> */}
         {postNodes && (
           <BlogPostPreviewList
