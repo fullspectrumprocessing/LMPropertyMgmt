@@ -17,7 +17,7 @@ function BlogPost (props) {
     <article className={styles.root}>
       <div className={styles.imageWrap}>
 <div className={styles.sliderWrapper}>
-<Slider dots >
+<Slider dots arrows={false}>
       {mainImage && mainImage.asset && (
         <div className={styles.mainImage}>
           <img
@@ -108,7 +108,10 @@ function BlogPost (props) {
    <style jsx>{`
    .carousel-dots li button:before {
     color: white !important;
+  }
 
+  .carousel-arrow button:before {
+    color: white !important;
   }
   
    `}</style>
