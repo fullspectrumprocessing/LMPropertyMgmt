@@ -14,6 +14,7 @@ function BlogPostPreview (props) {
       className={props.isInList ? styles.inList : styles.inGrid}
       to={getBlogUrl(props.publishedAt, props.slug.current)}
     >
+      <div className={styles.wrapper}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -28,8 +29,9 @@ function BlogPostPreview (props) {
       </div>
       <div className={styles.text}>
         {console.log(props._rawExcerpt)}
-        <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+        {/* <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3> */}
         <h2 className={cn(responsiveTitle3, styles.title)}>${props.price}</h2>
+        <hr></hr>
         <h2 className={cn(responsiveTitle3, styles.title)}>{props.bedrooms} Bed/{props.bathrooms} Bath</h2>
         {/* <h3 className={cn(responsiveTitle3, styles.title)}>{props.bathrooms} Bath</h3> */}
         <h2 className={cn(responsiveTitle3, styles.title)}>{props.squareFeet} Sq. Feet</h2>
@@ -40,6 +42,7 @@ function BlogPostPreview (props) {
           </div>
         )} */}
         {/* <div className={styles.date}>{format(props.publishedAt, 'MMMM Do, YYYY')}</div> */}
+      </div>
       </div>
     </Link>
   )

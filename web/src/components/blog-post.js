@@ -23,7 +23,7 @@ function BlogPost (props) {
           <img
             src={imageUrlFor(buildImageObj(mainImage))
               .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
+              .height(Math.floor((13 / 16) * 1200))
               .fit('crop')
               .auto('format')
               .url()}
@@ -38,7 +38,7 @@ postImage1 && postImage1.asset && (
       <img
             src={imageUrlFor(buildImageObj(postImage1))
               .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
+              .height(Math.floor((13 / 16) * 1200))
               .fit('crop')
               .auto('format')
               .url()}
@@ -51,7 +51,7 @@ postImage1 && postImage1.asset && (
       <img
             src={imageUrlFor(buildImageObj(postImage2))
               .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
+              .height(Math.floor((13 / 16) * 1200))
               .fit('crop')
               .auto('format')
               .url()}
@@ -64,14 +64,14 @@ postImage1 && postImage1.asset && (
       <img
             src={imageUrlFor(buildImageObj(postImage3))
               .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
+              .height(Math.floor((13 / 16) * 1200))
               .fit('crop')
               .auto('format')
               .url()}
             alt={postImage3.alt}
           />
      </div>
-      ): null}
+      ) : null}
   
       </Slider>
       </div>

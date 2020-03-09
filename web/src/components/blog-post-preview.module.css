@@ -10,11 +10,11 @@
 .inList {
   composes: root;
 
-  @media (--media-min-medium) {
-    display: grid;
+  /* @media (--media-min-medium) {
+    /* display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 2em;
-  }
+    grid-gap: 2em; */
+  /* } */ 
 }
 
 .inGrid {
@@ -23,21 +23,27 @@
 
 .leadMediaThumb {
   position: relative;
-  padding-bottom: 66.666%;
-  background: var(--color-very-light-gray);
+  /* padding-bottom: 66.666%; */
+  /* background: var(--color-very-light-gray); */
 
   @nest & img {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: 0; */
+    width: 300px;
+    height: 250px;
     object-fit: cover;
   }
 }
 
 .text {
   /* empty */
+  padding-left: 20px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
 }
 
 .title {
