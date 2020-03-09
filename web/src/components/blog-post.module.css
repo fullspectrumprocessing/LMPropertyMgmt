@@ -10,6 +10,7 @@
 .imageWrap {
   width: 100%;
   background: black;
+  height: 100%;
 
 }
 .carousel-dots li button:before {
@@ -20,7 +21,7 @@
   display: block;
   position: relative;
   background: var(--color-very-light-gray);
-  padding-bottom: calc(9 / 16 * 100%);
+  padding-bottom: calc(11 / 16 * 100%);
 
   @nest & img {
     display: block;

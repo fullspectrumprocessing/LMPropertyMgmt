@@ -4,7 +4,7 @@
 .content {
   background: var(--color-white);
   min-height: calc(100% - 73px - 120px);
-
+  max-width: 100%;
   @media (--media-min-small) {
     min-height: calc(100% - 91px - 155px);
   }

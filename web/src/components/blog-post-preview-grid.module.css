@@ -26,9 +26,9 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (--media-min-medium) {
+  /* @media (--media-min-medium) {
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 }
 
 .browseMoreNav {
