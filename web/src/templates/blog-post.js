@@ -59,6 +59,24 @@ query BlogPostTemplateQuery($id: String!) {
     price
     neighborhood
     _rawDescription(resolveReferences: {maxDepth: 10})
+    postImage1 {
+      alt
+      asset {
+        _id
+      }
+    }
+    postImage2 {
+      alt
+      asset {
+        _id
+      }
+    }
+    postImage3 {
+      alt
+      asset {
+        _id
+      }
+    }
   }
 }
 
