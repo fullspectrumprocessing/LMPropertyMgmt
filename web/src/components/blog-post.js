@@ -32,7 +32,8 @@ function BlogPost (props) {
         </div>
       )}
      
-      {postImage1 && postImage1.asset && (
+      { postImage1 ? 
+postImage1 && postImage1.asset && (
         <div className={styles.mainImage}>
       <img
             src={imageUrlFor(buildImageObj(postImage1))
@@ -44,8 +45,8 @@ function BlogPost (props) {
             alt={postImage1.alt}
           />
      </div>
-      )}
-       {postImage1 && postImage2.asset && (
+      ): null }
+       { postImage2 ? postImage2 && postImage2.asset && (
         <div className={styles.mainImage}>
       <img
             src={imageUrlFor(buildImageObj(postImage2))
@@ -57,8 +58,8 @@ function BlogPost (props) {
             alt={postImage2.alt}
           />
      </div>
-      )}
-       {postImage1 && postImage3.asset && (
+      ): null}
+       {postImage3 ? postImage3 && postImage3.asset && (
         <div className={styles.mainImage}>
       <img
             src={imageUrlFor(buildImageObj(postImage3))
@@ -70,7 +71,7 @@ function BlogPost (props) {
             alt={postImage3.alt}
           />
      </div>
-      )}
+      ): null}
   
       </Slider>
       </div>
