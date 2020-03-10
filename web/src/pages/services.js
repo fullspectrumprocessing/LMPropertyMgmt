@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Container from "../components/container";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import Services from "../components/services"
 
 export const query = graphql`
   query ServicesPageQuery {
@@ -22,7 +23,8 @@ const ServicesPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1>Services Page</h1>
+        {/* <h1>Services Page</h1> */}
+        <Services/>
       </Container>
     </Layout>
   );

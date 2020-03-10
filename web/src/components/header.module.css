@@ -64,6 +64,7 @@
 
 .nav {
   display: none;
+  color: #274076;
 
   @nest & ul {
     margin: 0;
@@ -79,7 +80,7 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      color: var(--color-accent);
+      color: #67c8d4;
     }
   }
 
