@@ -12,30 +12,56 @@
 
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
-
+  /* background: #274076; */
+  background: #C8C8C8;
+  color: #274076;
+  text-decoration: none;
   @nest & a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 
     @media (hover: hover) {
       @nest &:hover {
-        color: var(--color-accent);
+        color: #67c8d4;
       }
     }
   }
 }
 
+.navTitle {
+  font-weight: 800;
+}
+
+.navList {
+  list-style: none;
+
+}
+
 .footerWrapper {
   box-sizing: border-box;
-  max-width: 960px;
+  max-width: 1366px;
   padding: 4.5em 1.5em 1.5em;
   margin: 0 auto;
 
   @media (--media-min-small) {
-    padding: 6em 2em 2em;
+    /* padding: 6em 2em 2em; */
   }
 }
+.wrap {
+  margin: 0 auto;
+}
 
+.upperWrapper {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.image {
+  width: 250px;
+}
 .companyAddress {
   text-align: center;
   margin: 0 0 1rem;

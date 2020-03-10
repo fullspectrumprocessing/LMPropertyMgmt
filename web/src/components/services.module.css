@@ -1,0 +1,36 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.serviceWrapper {
+    height: 800px;
+    display: flex;
+
+    flex-direction: row;
+}
+
+.maintenanceWrap {
+    padding-top: 200px;
+width: 33.3%;
+margin: 0 auto;
+
+}
+
+.image {
+   height: 100px; 
+   width: 100px;
+   margin: 0 auto;
+}
+
+.card {
+   max-width: 320px;
+ }
+ .title {
+   text-align: center;
+   /* color: #274076; */
+   color: #67c8d4;
+  }
+
+ .p {
+    text-align: center;
+    color: #274076;
+  }

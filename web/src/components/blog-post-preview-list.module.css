@@ -3,6 +3,8 @@
 
 .root {
   margin: 2em 0 4em;
+  min-height: 500px;
+  padding-top: 100px;
 }
 
 .headline {
