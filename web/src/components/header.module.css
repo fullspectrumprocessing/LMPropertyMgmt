@@ -81,6 +81,7 @@
   @media (hover: hover) {
     @nest & ul li a:hover {
       color: #67c8d4;
+      
     }
   }
 

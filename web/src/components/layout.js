@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './header'
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image"
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -37,12 +37,12 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
                 </div>
                     <div className={styles.wrap}>
                       <ul className={styles.navList}>
-                        <li className={styles.navTitle}>Navigation</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Properties</li>
-                        <li>Contact</li>
-                        <li>Home</li>
+                        <li className={styles.navTitle} > Navigation</li>
+                        <li className={styles.navItem}><Link to="/about">About</Link></li>
+                        <li className={styles.navItem}><Link to="/services">Services</Link></li>
+                        <li className={styles.navItem}><Link to="/properties">Properties</Link></li>
+                        <li className={styles.navItem}><Link to="/contact">Contact</Link></li>
+                        <li className={styles.navItem}><Link to="/">Home</Link></li>
                       </ul>
                     </div>
                     <div>

@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Container from "../components/container";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import About from "../components/about";
 
 export const query = graphql`
   query AboutPageQuery {
@@ -21,9 +22,10 @@ const AboutPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container>
-        <h1>About Page</h1>
-      </Container>
+  
+        {/* <h1>About Page</h1> */}
+        <About/>
+  
     </Layout>
   );
 };

@@ -17,7 +17,8 @@
   color: #274076;
   text-decoration: none;
   @nest & a {
-    color: white;
+    color: #274076;
+    /* color: white; */
     text-decoration: none;
 
     @media (hover: hover) {
@@ -34,8 +35,13 @@
 
 .navList {
   list-style: none;
+  
 
 }
+
+/* .navItem:hover {
+  color: pink;
+} */
 
 .footerWrapper {
   box-sizing: border-box;
