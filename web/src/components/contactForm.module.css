@@ -1,0 +1,83 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.formContainer {
+width: 100%;
+background: #274076;
+}
+
+.formWrap {
+padding-top: 100px;
+max-width: 1200px;
+margin: 0 auto;
+min-height: 800px;
+
+
+
+}
+
+.h2 {
+    /* color: #274076; */
+    color: #67c8d4;
+    text-align: center;
+    font-size: 50px;
+}
+
+.styledForm {
+
+max-width: 600px;
+border: 3px solid #67c8d4;
+background: pink;
+}
+
+.styledArea {
+    /* color: #274076; */
+    color: white;
+    padding: 20px;
+    width: 600px;
+   display: block;
+    height: 150px;
+    /* border: 3px solid #274076; */
+    border: 3px solid white;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #274076;
+    /* border-top: none;
+    border-left: none;
+    border-right: none;
+    */
+}
+
+.styledInput {
+display: block;
+/* color: #274076; */
+color: white;
+background-color: #274076;
+padding: 20px;
+width: 600px;
+display: block;
+/* border-bottom: 3px solid #274076; */
+border-bottom: 3px solid white;
+border-top: none;
+border-left: none;
+border-right: none;
+margin: 0 auto;
+margin-top: 40px;
+}
+
+::placeholder {
+    color: #67c8d4;
+  font-size: 20px;
+  }
+
+.styledButton {
+    color: #274076;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    background-color: #67c8d4;
+    border-radius: 3px;
+    font-size: 20px;
+}

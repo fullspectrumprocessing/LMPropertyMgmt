@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import Container from "../components/container";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import Contact from "../components/contact";
+import ContactForm from "../components/contactForm";
 
 export const query = graphql`
   query ContactPageQuery {
@@ -21,9 +23,8 @@ const ContactPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container>
-        <h1>Contact Page</h1>
-      </Container>
+    <Contact />
+    <ContactForm />
     </Layout>
   );
 };

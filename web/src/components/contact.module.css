@@ -1,0 +1,43 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: row;  
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.contactInfoWrap {
+    margin-top: 120px;
+    min-height: 400px;
+    width: 50%;
+    
+}
+
+.title {
+    color: #274076;
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.subHeader {
+    color: #274076;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
+.contactInfoTextWrap {
+
+    color: #274076;
+}
+.contactLineItem {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 5px;
+    letter-spacing: 1.3px;
+}
+
