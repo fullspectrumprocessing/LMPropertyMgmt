@@ -1,0 +1,29 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #274076;
+    position: absolute;
+    top: 250px;
+    width: 700px;
+    left: 30%;
+    font-weight: 800;
+   
+}
+
+.image {
+   height: 800px;
+   width: 100%; 
+   position: relative;
+}
+
+.overlay {
+    height: 800px;
+    width: 100%; 
+    position: absolute;
+    top: 85px;
+    background: white;
+    opacity: .25;
+}
