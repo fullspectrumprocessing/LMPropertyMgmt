@@ -28,7 +28,7 @@ const HomeHero = () => {
           imgStyle={{ objectPosition: "top" }}
         />
         <div className={styles.overlay}></div>
-        <h1 className={styles.headingText}>I am Heading Text</h1>
+        <h1 className={styles.headingText}>LMPM tagline goes here</h1>
       </div>
     </>
   );

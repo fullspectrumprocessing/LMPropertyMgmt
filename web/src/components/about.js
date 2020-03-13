@@ -42,7 +42,7 @@ const Services =  props  => {
    <div className={styles.teamWrap}>
        <div className={styles.teamText}>
        <h2 className={styles.title}>Our Team</h2>
-       <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+       <div>Our responsive team works hard to make sure that we keep our tennants happy and buildings well maintained </div>
        </div>
    <div className={styles.imageWrap}>
    <Img className={styles.image} fluid={data.team.childImageSharp.fluid}/>
