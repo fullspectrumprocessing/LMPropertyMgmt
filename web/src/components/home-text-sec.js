@@ -26,7 +26,7 @@ const HomeTextSec = () => {
           <p> Have a question? </p>
           <p>Our responsive team is here to talk to you. </p>
         </div>
-        <button className={styles.contactButton}>Contact Us</button>
+       <Link to="/contact"><button className={styles.contactButton}>Contact Us</button></Link> 
       </div>
       <div className={styles.secWrapper}>
         <div className={styles.textBox}>

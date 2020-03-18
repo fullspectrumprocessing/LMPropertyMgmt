@@ -6,6 +6,8 @@ import styles from './blog-post-preview-grid.module.css'
 
 function BlogPostPreviewGrid (props) {
   return (
+    <>
+    <h1 className={styles.title}>Available Rentals</h1>
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
       <ul className={styles.grid}>
@@ -22,6 +24,7 @@ function BlogPostPreviewGrid (props) {
         </div>
       )}
     </div>
+    </>
   )
 }
 

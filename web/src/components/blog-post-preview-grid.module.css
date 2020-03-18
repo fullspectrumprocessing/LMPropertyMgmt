@@ -5,6 +5,15 @@
   margin: 2em 0 4em;
 }
 
+.title {
+  color: #274076;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 100px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+
 .headline {
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
@@ -21,9 +30,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;
+  justify-items: center;
 
   @media (--media-min-small) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5em;
   }
 
   /* @media (--media-min-medium) {
