@@ -9,6 +9,7 @@
 
 .imageWrap {
   width: 100%;
+  position: relative;
   background: black;
   height: 100%;
 
@@ -37,11 +38,12 @@
 
 .imagesDiv {
   display: flex;
+  position: relative;
   flex-direction: row;
 }
 
 .sliderWrapper {
-
+  position: relative;
   max-width: 800px;
   background: black;
   margin: 0 auto;

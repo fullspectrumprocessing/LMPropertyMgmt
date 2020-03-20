@@ -34,6 +34,11 @@
   max-width: 1200px;
 }
 
+.listing {
+  margin: 30px;
+ 
+}
+
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 2rem;

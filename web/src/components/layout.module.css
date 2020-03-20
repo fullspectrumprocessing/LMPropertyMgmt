@@ -46,7 +46,7 @@
 .footerWrapper {
   box-sizing: border-box;
   max-width: 1366px;
-  padding: 4.5em 1.5em 1.5em;
+  padding: 3em 1.5em 1.5em;
   margin: 0 auto;
 
   @media (--media-min-small) {
