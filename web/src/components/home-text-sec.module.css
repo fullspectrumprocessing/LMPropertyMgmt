@@ -82,11 +82,13 @@
 }
 
 .secWrapper {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: auto;
-    @media (--media-min-small) {
+    @media (min-width: 950px) {
+        display: flex;
         flex-wrap: noWrap;
+        height: 100%;
     }
 }
 
@@ -97,10 +99,15 @@
     opacity: .85; */
     background: #274076;
     /* background: #67C8D4; */
-    @media (--media-min-small) {
-        width: 50%;
+    @media (min-width: 950px) {
+        width: 50%; 
+       margin-bottom: 6px;
+    }
+    @media (min-width: 1050px) {
+      margin-bottom: 5px;
     }
 }
+
 
 .textHome {
     color: white;
@@ -111,19 +118,44 @@
     font-size: 20px;
     padding: 20px 20px 20px 20px;
     margin: 20px;
+
     @media (--media-min-medium) {
-        margin: 50px;
+        margin: 45px;
+        padding: 20px;
+       
     }
-    @media (--media-min-large) {
-        margin: 80px;
-        font-size: 30px;
+    @media (min-width: 1050px) {
+        font-size: 23px;
+    }
+    @media (min-width: 1120px) {
+        font-size: 25px;
+        padding: 28px;
+    }
+    @media (min-width: 1250px) {
+        padding: 52px;
+       
+    }
+    @media (min-width: 1400px) {
+        padding: 50px;
+        font-size: 30px; 
+    }
+    @media (min-width: 1550px) {
+        padding: 70px;
+        font-size: 32px; 
+    }
+    @media (min-width: 1650px) {
+        padding: 95px;
+     
     }
 }
 
 .slider {
     height: 100% !important;
-    width: 50%;
+    width: 100%;
     position: relative;
+    @media (min-width: 950px) {
+        width: 50%;
+    }
 }
 
 .carousel-dots li button:before {
@@ -139,7 +171,7 @@
 .imageWrap {
     display: none;
     /* position: relative; */
-    width: 100%;
+    width: 100% !important;
     height: 100%;
 
     /* @nest & img {
@@ -153,11 +185,13 @@
     object-fit: cover;
   } */
 
-    @media (--media-min-small) {
+    @media (min-width: 950px) {
         display: flex;
         /* height: 100%; */
         width: 50%;
     }
+
+ 
 }
 
 .image {
