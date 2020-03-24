@@ -8,12 +8,15 @@
 }
 
 .headline {
-  font-size: var(--font-micro-size);
+  /* font-size: var(--font-micro-size); */
+  font-size: 16px;
   line-height: var(--font-micro-line-height);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 2rem 0;
+  color: #274076;
+  padding-left: 20px;
 }
 
 .grid {
@@ -31,10 +34,17 @@
   max-width: 1200px;
 }
 
+.listing {
+  margin: 30px;
+ 
+}
+
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 2rem;
   text-align: center;
+  color: #274076;
+  font-size: 16px;
 
 
   @nest & a {

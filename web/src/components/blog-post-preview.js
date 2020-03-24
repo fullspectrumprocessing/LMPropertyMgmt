@@ -10,6 +10,8 @@ import {responsiveTitle3} from './typography.module.css'
 
 function BlogPostPreview (props) {
   return (
+    <>
+   
     <Link
       className={props.isInList ? styles.inList : styles.inGrid}
       to={getBlogUrl(props.publishedAt, props.slug.current)}
@@ -30,8 +32,8 @@ function BlogPostPreview (props) {
       <div className={styles.text}>
         {console.log(props._rawExcerpt)}
         {/* <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3> */}
-        <h2 className={cn(responsiveTitle3, styles.title)}>${props.price}</h2>
-        <hr></hr>
+        <h2 className={cn(responsiveTitle3, styles.title, styles.price)}>${props.price}</h2>
+        {/* <hr></hr> */}
         <h2 className={cn(responsiveTitle3, styles.title)}>{props.bedrooms} Bed/{props.bathrooms} Bath</h2>
         {/* <h3 className={cn(responsiveTitle3, styles.title)}>{props.bathrooms} Bath</h3> */}
         <h2 className={cn(responsiveTitle3, styles.title)}>{props.squareFeet} Sq. Feet</h2>
@@ -45,6 +47,7 @@ function BlogPostPreview (props) {
       </div>
       </div>
     </Link>
+    </>
   )
 }
 

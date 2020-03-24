@@ -12,7 +12,7 @@ function BlogPostPreviewGrid(props) {
         {props.nodes &&
           props.nodes.map(node => (
           
-            <li key={node.id}>
+            <li key={node.id} className={styles.listing}>
               <BlogPostPreview {...node} isInList />
               {console.log(node)}
             </li>

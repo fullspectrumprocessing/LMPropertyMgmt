@@ -1,40 +1,95 @@
 @import '../styles/custom-media.css';
 
 .firstDiv {
-    height: 225px;
+    min-height: 225px;
     font-size: 30px;
-    padding: 50px;
-    display: flex;
+    padding: 20px;
+    display: block;
     /* flex-direction: row; */
+    @media (min-width: 700px) {
+        display: flex;
+        padding: 50px;
+    }
 }
 
 .textWrap {
-/* display: flex; */
-width: 70%;
-color: #274076;
+    /* display: flex; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #274076;
 
+    @media (min-width: 550px) {
+        padding: 20px;
+    }
+    @media (min-width: 700px) {
+        width: 80%;
+        padding: 20px;
+        text-align: left;
+    }
+    @media (min-width: 1250px) {
+        font-size: 45px;
+        padding-left: 40px;
+    }
 }
 
 .contactButton {
     /* width: 30%; */
+    width: 170px;
     padding: 20px;
-    height: 60px;
-    display: inline-block;
-    background: #67C8D4;
-    margin-top:50px;
+    height: 65px;
+    /* display: inline-block; */
+    background: #67c8d4;
+
+    margin-top: 10px;
     color: #274076;
     border-radius: 4px;
     border: none;
     font-size: 22px;
+    @media (min-width: 700px) {
+        margin-top: 90px;
+    }
+    @media (min-width: 1350px) {
+        height: 150px;
+        width: 260px;
+        font-size: 30px;
+    }
 }
+
+/* .link {
+    margin: 0 auto;
+    position: relative;
+    height: 65px;
+    
+} */
+
+.buttonA {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    @media (min-width: 700px) {
+        width: 30%;
+    }
+    @media (min-width: 1100px) {
+        text-align: left;
+    }
+}
+
+.contactButton:hover {
+    background: #274076;
+    color: #67c8d4;
+}
+
 .secWrapper {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: auto;
-    @media (--media-min-small) {
-        flex-wrap: noWrap; 
-              }
-
+    @media (min-width: 950px) {
+        display: flex;
+        flex-wrap: noWrap;
+        height: 100%;
+    }
 }
 
 .textBox {
@@ -44,10 +99,15 @@ color: #274076;
     opacity: .85; */
     background: #274076;
     /* background: #67C8D4; */
-    @media (--media-min-small) {
-     width: 50%;
-           }
+    @media (min-width: 950px) {
+        width: 50%; 
+       margin-bottom: 6px;
+    }
+    @media (min-width: 1050px) {
+      margin-bottom: 5px;
+    }
 }
+
 
 .textHome {
     color: white;
@@ -58,42 +118,97 @@ color: #274076;
     font-size: 20px;
     padding: 20px 20px 20px 20px;
     margin: 20px;
+
     @media (--media-min-medium) {
-       margin: 50px;
-              }
-              @media (--media-min-large) {
-                margin: 80px;
-                font-size: 30px;
-                       }            
-    
+        margin: 45px;
+        padding: 20px;
+       
+    }
+    @media (min-width: 1050px) {
+        font-size: 23px;
+    }
+    @media (min-width: 1120px) {
+        font-size: 25px;
+        padding: 28px;
+    }
+    @media (min-width: 1250px) {
+        padding: 52px;
+       
+    }
+    @media (min-width: 1400px) {
+        padding: 50px;
+        font-size: 30px; 
+    }
+    @media (min-width: 1550px) {
+        padding: 70px;
+        font-size: 32px; 
+    }
+    @media (min-width: 1650px) {
+        padding: 95px;
+     
+    }
+}
+
+.slider {
+    height: 100% !important;
+    width: 100%;
+    position: relative;
+    @media (min-width: 950px) {
+        width: 50%;
+    }
+}
+
+.carousel-dots li button:before {
+    color: white !important;
+}
+.carousel-dots {
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 10px;
 }
 
 .imageWrap {
-   display: none;
+    display: none;
+    /* position: relative; */
+    width: 100% !important;
+    height: 100%;
 
+    /* @nest & img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-   height: auto;
-   @media (--media-min-small) {
-  
-       display: flex;
-    /* height: 100%; */
-    width: 50%;
-          }
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+  } */
+
+    @media (min-width: 950px) {
+        display: flex;
+        /* height: 100%; */
+        width: 50%;
+    }
+
+ 
 }
 
 .image {
     height: 300px;
     width: 100%;
+    object-fit: cover;
 
     /* border: 50px solid white; */
-  
+
     @media (--media-min-small) {
-       
         height: 100%;
-              }
+
+        width: 100%;
+    }
 }
 
 .link {
-color: #67C8D4 !important;
-text-decoration: none;
- }
+    color: #67c8d4 !important;
+    text-decoration: none;
+}
