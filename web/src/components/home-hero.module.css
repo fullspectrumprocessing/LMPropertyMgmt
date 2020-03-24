@@ -41,12 +41,15 @@ width: 100vw;
 }
 
 .headingText {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     position: absolute;
     top: 30%;
     color: white;
+    @media (--media-min-medium) {
+      font-size: 50px;
+         }
     
 }
 

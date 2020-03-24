@@ -35,6 +35,13 @@
 
 .navList {
   list-style: none;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 12px;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
   
 
 }
@@ -62,11 +69,18 @@
   justify-content: flex-end;
   justify-content: space-between;
   position: relative;
+  @media (min-width: 900px) {
+
+  }
 
 }
 
 .image {
-  width: 250px;
+ display: none;
+  @media (min-width: 600px){
+    display: inline-block;
+    width: 250px;
+  }
 }
 .companyAddress {
   text-align: center;
@@ -78,7 +92,7 @@
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
   background: #274076;
-  width: 100%;
+  /* width: 100%; */
   padding: 15px;
   color: white;
   @nest & a {
