@@ -9,11 +9,13 @@
     min-height: calc(100% - 91px - 155px);
   }
 }
-
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
   /* background: #274076; */
-  background: #C8C8C8;
+  /* background: #C8C8C8; */
+  /* background: #BFD6EF; */
+  /* background: #E0E0E0; */
+  background: #EAEAEA;
   color: #274076;
   text-decoration: none;
   @nest & a {
@@ -91,7 +93,8 @@
   text-align: center;
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
-  background: #274076;
+  /* background: #274076; */
+  background: #414751;
   /* width: 100%; */
   padding: 15px;
   color: white;
