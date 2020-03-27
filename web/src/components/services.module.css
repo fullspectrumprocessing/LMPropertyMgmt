@@ -2,17 +2,23 @@
 @import '../styles/custom-properties.css';
 
 .serviceWrapper {
-    height: 800px;
-    display: flex;
+    height: auto;
 
+    @media (min-width: 900px){
+    display: flex;
     flex-direction: row;
+    height: 800px;
+  }
 }
 
 .maintenanceWrap {
-    padding-top: 200px;
-width: 33.3%;
+  padding: 15px;
+padding-top: 70px;
 margin: 0 auto;
-
+@media (min-width: 900px){
+  padding-top: 200px;
+  width: 33.3%;
+}
 }
 
 .image {
@@ -23,6 +29,7 @@ margin: 0 auto;
 
 .card {
    max-width: 320px;
+   margin: 0 auto;
  }
  .title {
    text-align: center;
