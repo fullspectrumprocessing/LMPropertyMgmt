@@ -25,16 +25,19 @@ min-height: 800px;
 
 .styledForm {
 
-max-width: 600px;
+/* max-width: 600px; */
 border: 3px solid #67c8d4;
 background: pink;
+@media (min-width: 700px) {
+    max-width: 600px;
+}
 }
 
 .styledArea {
     /* color: #274076; */
     color: white;
     padding: 20px;
-    width: 600px;
+    width: 80%;
    display: block;
     height: 150px;
     /* border: 3px solid #274076; */
@@ -46,6 +49,9 @@ background: pink;
     border-left: none;
     border-right: none;
     */
+    @media (min-width: 700px) {
+        width: 600px;
+    }
 }
 
 .styledInput {
@@ -54,7 +60,7 @@ display: block;
 color: white;
 background-color: #274076;
 padding: 20px;
-width: 600px;
+width: 80%;
 display: block;
 /* border-bottom: 3px solid #274076; */
 border-bottom: 3px solid white;
@@ -63,6 +69,9 @@ border-left: none;
 border-right: none;
 margin: 0 auto;
 margin-top: 40px;
+@media (min-width: 700px) {
+    width: 600px;
+}
 }
 
 ::placeholder {

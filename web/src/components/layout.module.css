@@ -9,11 +9,13 @@
     min-height: calc(100% - 91px - 155px);
   }
 }
-
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
   /* background: #274076; */
-  background: #C8C8C8;
+  /* background: #C8C8C8; */
+  /* background: #BFD6EF; */
+  /* background: #E0E0E0; */
+  background: #EAEAEA;
   color: #274076;
   text-decoration: none;
   @nest & a {
@@ -35,6 +37,13 @@
 
 .navList {
   list-style: none;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 12px;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
   
 
 }
@@ -62,11 +71,18 @@
   justify-content: flex-end;
   justify-content: space-between;
   position: relative;
+  @media (min-width: 900px) {
+
+  }
 
 }
 
 .image {
-  width: 250px;
+ display: none;
+  @media (min-width: 600px){
+    display: inline-block;
+    width: 250px;
+  }
 }
 .companyAddress {
   text-align: center;
@@ -77,8 +93,9 @@
   text-align: center;
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
-  background: #274076;
-  width: 100%;
+  /* background: #274076; */
+  background: #414751;
+  /* width: 100%; */
   padding: 15px;
   color: white;
   @nest & a {

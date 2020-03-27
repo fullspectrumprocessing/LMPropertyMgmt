@@ -6,6 +6,10 @@
   z-index: 100;
 }
 
+.active {
+  color: #66c8d4;
+}
+
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;

@@ -29,23 +29,24 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => {
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
         <li >
-            <Link to='/'>Home</Link>
+            <Link to='/' activeStyle={{ color: "#66c8d4" }}>Home</Link>
           </li>
           <li >
-            <Link to='/about/'>About</Link>
+            <Link to='/about/' activeStyle={{ color: "#66c8d4" }}>About</Link>
           </li>
           <li>
-            <Link to='/services/'>Services</Link>
+            <Link to='/services/' activeStyle={{ color: "#66c8d4" }}>Services</Link>
           </li>
           <li>
-            <Link to='/properties/'>Properties</Link>
+            <Link to='/properties/' activeStyle={{ color: "#66c8d4" }}>Properties</Link>
           </li>
           <li>
-            <Link to='/contact/'>Contact</Link>
+            <Link to='/contact/' activeStyle={{ color: "#66c8d4" }}>Contact</Link>
           </li>
         </ul>
       </nav>
     </div>
+   
   </div>
 )}
 
