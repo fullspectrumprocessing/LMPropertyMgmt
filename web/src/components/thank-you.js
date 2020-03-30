@@ -35,12 +35,14 @@ const ThankYou =  props  => {
 
  return (
     <>
+    <div className={styles.container}>
 <Img className={styles.image} fluid={data.city.childImageSharp.fluid}/>
 <div className={styles.overlay}></div>
     <div className={styles.title}>
         
-        <p>Thank You for Your Message </p>
-    <p > We Will be in Touch Shortly</p>
+        <div className={styles.line1}>Thank You for Your Message </div>
+    <div className={styles.line2}> We Will be in Touch Shortly</div>
+    </div>
     </div>
     </>
  )

@@ -34,7 +34,7 @@
     max-width: 890px;
     margin: 0 auto;
     /* margin-top: 130px;  */
-    z-index: 100;
+    z-index: 50;
     position: absolute;
     top: 275px;
     left: 25%;

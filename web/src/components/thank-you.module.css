@@ -1,26 +1,56 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+
+.container {
+    height: 1129px;
+}
+
 .title {
     text-align: center;
     font-size: 50px;
     color: #274076;
     position: absolute;
-    top: 250px;
-    width: 700px;
-    left: 30%;
+    margin: 0 auto;
+    width: 300px;
+    top: 150px;
+    /* width: 700px; */
+    left: 50%;
+    margin-left: -150px;
     font-weight: 800;
-   
+    @media (min-width: 500px){
+       width: 400px;
+        top: 150px;
+        margin-left: -200px;
+    }
+    @media (min-width: 900px){
+        top: 250px;
+        width: 700px;
+        margin-left: -350px;
+    }
+    @media (min-width: 1520px){
+        font-size: 70px;
+        width: 1000px;
+        margin-left: -500px;
+    }
+}
+
+.line1 {
+padding-bottom: 30px;
+}
+
+.line2 {
+font-size: 40px;
 }
 
 .image {
-   height: 800px;
+   height: 1129px;
    width: 100%; 
    position: relative;
 }
 
 .overlay {
-    height: 800px;
+    height: 1129px;
     width: 100%; 
     position: absolute;
     top: 85px;
