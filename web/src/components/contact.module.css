@@ -45,11 +45,18 @@
 .contactInfoTextWrap {
 
     color: #274076;
+  
 }
 .contactLineItem {
     max-width: 350px;
     margin: 0 auto;
     padding: 5px;
     letter-spacing: 1.3px;
+    &:hover {
+      color: #67c8d4;
+    }
 }
 
+.phoneMaintenance {
+
+}
