@@ -35,7 +35,7 @@ export const ContactForm = () => {
         }),
       })
         // then go to thank you page
-        .then(() => navigateTo('/thankyou'))
+        .then(() => navigateTo('/thank-you'))
         .catch(error => alert(error));
     }
   }
@@ -66,6 +66,7 @@ export const ContactForm = () => {
               value={name}
               placeholder="Name"
               label="Name"
+              required
               type="text"
               onChange={e => updateState({ name: e.target.value })}
             />
@@ -73,6 +74,7 @@ export const ContactForm = () => {
               name="email"
               value={email}
               placeholder="Email"
+              required
               label="Email"
               type="email"
               onChange={e => updateState({ email: e.target.value })}
@@ -81,6 +83,7 @@ export const ContactForm = () => {
               name="subject"
               value={subject}
               placeholder="Subject"
+              required
               label="Subject"
               type="text"
               onChange={e => updateState({ subject: e.target.value })}
@@ -89,6 +92,7 @@ export const ContactForm = () => {
               type="textarea"
               name="message"
               value={message}
+              required
               placeholder="Message"
               label="Message"
               type="text"
