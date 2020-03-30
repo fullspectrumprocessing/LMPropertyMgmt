@@ -41,8 +41,12 @@ const Services =  props  => {
     <h3 className={styles.subHeader}>Contact our maintenance team</h3>
     <div className={styles.contactInfoTextWrap}>
         <p className={styles.contactLineItem}> Property Manager:</p>
-        <p className={styles.contactLineItem}>(215) 668 - 1066</p>
-        <p className={styles.contactLineItem}>rrosario@LMPropertyMgmt.com</p>
+        <p className={`${styles.contactLineItem}`}  target="_blank"
+            rel="noopener noreferrer"
+            href="tel:+12156681066">(215) 668 - 1066</p>
+        <p className={`${styles.contactLineItem}` }    target="_blank"
+            rel="noopener noreferrer"
+            href="rrosario@LMPropertyMgmt.com">rrosario@LMPropertyMgmt.com</p>
         </div>
 </div>
 
@@ -52,8 +56,12 @@ const Services =  props  => {
 
     <div className={styles.contactInfoTextWrap}>
         <p className={styles.contactLineItem}>Rental Manager:</p>
-        <p className={styles.contactLineItem}>(267) 465-9012</p>
-        <p className={styles.contactLineItem}>info@LMPropertyMgmt.com</p>
+        <p className={`${styles.contactLineItem} `} target="_blank"
+            rel="noopener noreferrer"
+            href="tel:+12674659012">(267) 465-9012</p>
+        <p className={`${styles.contactLineItem}  ${styles.emailRental}`} target="_blank"
+            rel="noopener noreferrer"
+            href="info@LMPropertyMgmt.com">info@LMPropertyMgmt.com</p>
         </div>
 </div>
 </div>
