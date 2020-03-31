@@ -4,32 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styles from './contact.module.css'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-const Services = props => {
-    const data = useStaticQuery(graphql`
-        query {
-            inspection: file(relativePath: { eq: "inspection.png" }) {
-                childImageSharp {
-                    fluid(fit: COVER, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
-                }
-            }
-            maintenance: file(relativePath: { eq: "maintenance.png" }) {
-                childImageSharp {
-                    fluid(fit: COVER, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
-                }
-            }
-            cleaning: file(relativePath: { eq: "clean.png" }) {
-                childImageSharp {
-                    fluid(fit: COVER, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
-                }
-            }
-        }
-    `)
+const Contact = props => {
+   
 
     return (
         <>
@@ -43,15 +19,17 @@ const Services = props => {
                             target="_blank"
                             rel="noopener noreferrer"
                             href="tel:+12156681066"
+                            className={styles.outboundLink}
                         >
-                            <p className={`${styles.contactLineItem}`}>(215) 668 - 1066</p>
+                            <p className={styles.contactLineItem}>(215) 668 - 1066</p>
                         </OutboundLink>
                         <OutboundLink
                             target="_blank"
                             rel="noopener noreferrer"
                             href="mailto:rrosario@LMPropertyMgmt.com"
+                            className={styles.outboundLink}
                         >
-                            <p className={`${styles.contactLineItem}`}>
+                            <p className={styles.contactLineItem}>
                                 rrosario@LMPropertyMgmt.com
                             </p>
                         </OutboundLink>
@@ -68,20 +46,21 @@ const Services = props => {
                             target="_blank"
                             rel="noopener noreferrer"
                             href="tel:+12674659012"
+                            className={styles.outboundLink}
                         >
-                            <p className={`${styles.contactLineItem} `}>(267) 465-9012</p>
+                            <p className={styles.contactLineItem}>(267) 465-9012</p>
                         </OutboundLink>
                         <OutboundLink
                             target="_blank"
                             rel="noopener noreferrer"
                             href="mailto:info@LMPropertyMgmt.com"
+                            className={styles.outboundLink}
                         >
-                            <p className={`${styles.contactLineItem}  ${styles.emailRental}`}>
+                            <p className={styles.contactLineItem}>
                                 info@LMPropertyMgmt.com
                             </p>
-                            </OutboundLink>
-                        </div>
-                   
+                        </OutboundLink>
+                    </div>
                 </div>
             </div>
 
@@ -92,4 +71,4 @@ const Services = props => {
     )
 }
 
-export default Services
+export default Contact
