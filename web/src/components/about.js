@@ -5,7 +5,7 @@ import styles from "./about.module.css";
 
 
 
-const Services =  props  => {
+const About =  props  => {
     const data = useStaticQuery(graphql`
     query {
       team: file(relativePath: { eq: "team.jpg" }) {
@@ -54,5 +54,5 @@ const Services =  props  => {
  )
  }
 
-export default Services
+export default About
 
