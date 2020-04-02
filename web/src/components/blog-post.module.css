@@ -1,7 +1,9 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
-.root {}
+.root { 
+  background-color: #FCFCFC;
+}
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
@@ -10,7 +12,8 @@
 .imageWrap {
   width: 100%;
   position: relative;
-  background: black;
+  background: #414751;
+  /* background: white; */
   height: 100%;
 
 }
@@ -45,7 +48,8 @@
 .sliderWrapper {
   position: relative;
   max-width: 800px;
-  background: black;
+  background: #414751;
+  /* background: white; */
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 15px;
@@ -55,7 +59,12 @@
   color: white;
 }
 .grid {
+ padding: 50px 50px 100px 50px;
+
+
+
   @media (--media-min-medium) {
+    padding: 100px 50px 100px 50px;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2em;
@@ -64,6 +73,7 @@
 }
 
 .mainContent {
+  color: #414751;
   @nest & a {
     color: var(--color-accent);
 
@@ -89,6 +99,7 @@
 }
 
 .metaContent {
+  color: #414751;
 }
 
 .publishedAt {

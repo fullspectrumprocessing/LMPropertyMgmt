@@ -2,7 +2,7 @@
 @import '../styles/custom-properties.css';
 
 .content {
-  background: var(--color-white);
+  background: #FCFCFC;
   min-height: calc(100% - 73px - 120px);
   max-width: 100%;
   @media (--media-min-small) {

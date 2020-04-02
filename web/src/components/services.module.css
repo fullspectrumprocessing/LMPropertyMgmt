@@ -3,11 +3,11 @@
 
 .serviceWrapper {
     height: auto;
-
     @media (min-width: 900px){
     display: flex;
     flex-direction: row;
     height: 800px;
+    background-color: #FCFCFC;
   }
 }
 
