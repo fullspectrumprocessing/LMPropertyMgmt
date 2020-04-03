@@ -5,6 +5,7 @@
   max-width: 1366px;
   margin: 0 auto;
   margin-bottom: 70px;
+  background-color: #FCFCFC;
   @media (min-width: 900px){
     display: flex;
     flex-direction: row;  

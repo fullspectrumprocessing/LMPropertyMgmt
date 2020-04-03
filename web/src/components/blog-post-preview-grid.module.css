@@ -9,11 +9,19 @@
   /* color: #274076; */
   /* color: #414751; */
   color: #66C8D4;
-  font-size: 50px;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  padding-top: 70px;
   text-transform: uppercase;
   word-spacing: 20px;
+  @media (--media-min-small) {
+    font-size: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
 }
 
 .headline {
@@ -34,7 +42,7 @@
   grid-gap: 2em;
   justify-items: center;
 
-  @media (--media-min-small) {
+  @media (min-width: 1100px ) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.5em;
   }

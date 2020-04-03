@@ -26,6 +26,7 @@ function BlogPostPreview (props) {
               .auto('format')
               .url()}
             alt={props.mainImage.alt}
+            className={styles.image}
           />
         )}
       </div>
