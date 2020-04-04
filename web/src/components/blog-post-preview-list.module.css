@@ -43,8 +43,8 @@
    overflow-x: scroll;
    height: 350px;
   }
-  @media (min-width: 1000px) {
-    max-width: 1100px;
+  @media (min-width: 1130px) {
+    max-width: 1130px;
     overflow-x: scroll;
   }
 
