@@ -70,7 +70,7 @@ const HomeTextSec = () => {
                     </p>
                 </div>
 
-                  <Slider dots className={styles.slider} arrows={false}>
+                  <Slider dots className={styles.slider} arrows={false} swipe={true}>
                     <div className={styles.imageWrap}>
                         <Img
                             className={styles.image}
