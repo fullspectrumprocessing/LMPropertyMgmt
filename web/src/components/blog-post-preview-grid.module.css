@@ -9,15 +9,23 @@
   /* color: #274076; */
   /* color: #414751; */
   color: #66C8D4;
-  font-size: 30px;
-  width: 340px;
+  font-size: 40px;
+  width: 300px;
   margin: 0 auto;
   text-align: center;
+  font-weight: 800;
   padding-bottom: 50px;
   padding-top: 70px;
+  padding: 20px;
   text-transform: uppercase;
   word-spacing: 20px;
   @media (--media-min-small) {
+    font-size: 45px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    width: 90%;
+  }
+  @media (--media-min-medium) {
     font-size: 50px;
     padding-bottom: 100px;
     width: 100%;
@@ -34,7 +42,9 @@
 }
 
 .grid {
-  margin: 0;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0;
   list-style: none;
   display: grid;

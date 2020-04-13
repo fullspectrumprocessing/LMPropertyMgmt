@@ -12,8 +12,6 @@ max-width: 1200px;
 margin: 0 auto;
 min-height: 800px;
 
-
-
 }
 
 .h2 {
@@ -24,7 +22,6 @@ min-height: 800px;
 }
 
 .styledForm {
-
 /* max-width: 600px; */
 border: 3px solid #67c8d4;
 background: pink;
@@ -38,7 +35,7 @@ background: pink;
     color: white;
     padding: 20px;
     width: 80%;
-   display: block;
+    display: block;
     height: 150px;
     /* border: 3px solid #274076; */
     border: 3px solid white;
@@ -68,7 +65,8 @@ border-top: none;
 border-left: none;
 border-right: none;
 margin: 0 auto;
-margin-top: 40px;
+padding-top: 40px;
+height: auto;
 @media (min-width: 700px) {
     width: 600px;
 }

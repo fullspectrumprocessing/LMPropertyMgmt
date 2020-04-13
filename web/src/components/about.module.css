@@ -24,32 +24,34 @@
    max-width: 890px;
     height: 100%;
     padding: 15px;
-   
+  
     margin: 0 auto;
-    border: 2px double #274076;
+   
     @media (min-width: 600px) {
         padding: 50px;
+        
     }
     @media (min-width: 823px) {
         padding: 55px;
+        border: 2px double #274076;
+        /* background: white; */
   
     }
 }
 
 .aboutDiv {
     /* background: aliceblue; */
-    background: white;
+    /* background: white; */
     max-width: 100%;
     left: 0;
     right: 0;
     /* color: #274076; */
-    color: #414751;
-
+    background: #274076;
+    color: white;
     margin: 0 auto;
     /* margin-top: 130px;  */
     z-index: 50;
     position: absolute;
-   
     /* margin-bottom: 120px; */
     border-radius: 2px;
     margin: 0 auto;
@@ -57,16 +59,18 @@
         top: 275px;
         left: 25%;
         max-width: 890px;
+        background: white;
+        color: #414751;
         right: 25%;
         padding: 25px 25px 25px 25px;
     }
-
 }
 
 .aboutText {
     text-align: center;
     max-width: 850px;
     margin: 0 auto;
+    padding: 10px;
     @media (min-width: 823px) {
       text-align: left;
     }
@@ -78,11 +82,14 @@ width: 100%;
 background: white;
 /* background: #67c8d4; */
 
-padding-top: 200px;
+padding-top: 150px;
 margin-top: -180px;
-@media (min-width: 600px) {
-    padding-top: 100px;
+@media (min-width: 410px) {
+padding-top: 100px;
 }
+/* @media (min-width: 600px) {
+    padding-top: 100px;
+} */
 @media (min-width: 823px) {
     padding-bottom: 160px;
     padding-top: 200px;
