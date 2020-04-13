@@ -72,9 +72,11 @@ height: auto;
 }
 }
 
+
 ::placeholder {
     color: #67c8d4;
   font-size: 20px;
+  overflow: visible;
   }
 
 .styledButton {
