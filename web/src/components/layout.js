@@ -38,11 +38,13 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
                     <div className={styles.wrap}>
                       <ul className={styles.navList}>
                         <li className={styles.navTitle} > Navigation</li>
+                        <li className={styles.navItem}><Link to="/">Home</Link></li>
                         <li className={styles.navItem}><Link to="/about">About</Link></li>
                         <li className={styles.navItem}><Link to="/services">Services</Link></li>
                         <li className={styles.navItem}><Link to="/properties">Properties</Link></li>
+                        <li className={styles.navItem}><Link to="/policies">Policies</Link></li>
                         <li className={styles.navItem}><Link to="/contact">Contact</Link></li>
-                        <li className={styles.navItem}><Link to="/">Home</Link></li>
+                       
                       </ul>
                     </div>
                     <div>
