@@ -42,12 +42,12 @@
   /* flex-wrap: wrap ; */
 
   @media (min-width: 550px) {
-   max-width: 530px;
+   max-width: 540px;
    overflow-x: scroll;
    height: 350px;
   }
   @media (min-width: 1130px) {
-    max-width: 1130px;
+    max-width: 1080px;
     overflow-x: scroll;
   }
 
