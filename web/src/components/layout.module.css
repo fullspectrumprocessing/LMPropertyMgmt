@@ -17,6 +17,7 @@
   /* background: #E0E0E0; */
   background: #EAEAEA;
   color: #274076;
+  font-family: 'Heebo';
   text-decoration: none;
   @nest & a {
     color: #274076;
@@ -98,6 +99,7 @@
   /* width: 100%; */
   padding: 15px;
   color: white;
+  font-family: 'Heebo';
   @nest & a {
 
   color: white;

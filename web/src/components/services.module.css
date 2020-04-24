@@ -35,9 +35,11 @@ margin: 0 auto;
    text-align: center;
    /* color: #274076; */
    color: #67c8d4;
+   font-family: 'Heebo';
   }
 
  .p {
     text-align: center;
     color: #274076;
+    font-family: 'Heebo';
   }

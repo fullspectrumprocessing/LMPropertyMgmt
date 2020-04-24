@@ -29,6 +29,10 @@ const HomeHero = () => {
         />
         <div className={styles.overlay}></div>
         <h1 className={styles.headingText}>LMPM tagline goes here</h1>
+        {/* <p className={styles.bodyText}>body text</p>
+        <p className={styles.navText}>Nav lists look like this</p> */}
+       
+        {/* <p className={styles.specialText}>Special texts</p> */}
       </div>
     </>
   );

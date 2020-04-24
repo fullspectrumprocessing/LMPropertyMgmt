@@ -49,6 +49,7 @@
     /* color: #274076; */
     background: #274076;
     color: white;
+    font-family: 'Heebo';
     margin: 0 auto;
     /* margin-top: 130px;  */
     z-index: 50;
@@ -115,6 +116,7 @@ color: #414751;
 max-width: 450px;
 margin: 0 auto;
 text-align: center;
+font-family: 'Heebo';
 
 @media (min-width: 823px) {
     width: 40%;
@@ -141,6 +143,9 @@ border-left: 3px solid white; */
    margin-top: -10px;
    text-align: center;
    color: #67c8d4;
+    /* font-family: 'Questrial'; */
+  font-family: 'Forum';
+  /* font-family: 'Prata'; */
    @media (min-width: 823px) {
     font-size: 55px;
     text-align: left;

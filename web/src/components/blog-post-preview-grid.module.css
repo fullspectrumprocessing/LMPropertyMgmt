@@ -9,6 +9,7 @@
   /* color: #274076; */
   /* color: #414751; */
   color: #66C8D4;
+  font-family: 'Heebo';
   font-size: 40px;
   width: 300px;
   margin: 0 auto;
@@ -17,8 +18,11 @@
   padding-bottom: 50px;
   padding-top: 70px;
   padding: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   word-spacing: 20px;
+  /* font-family: 'Questrial'; */
+  font-family: 'Forum';
+  /* font-family: 'Prata'; */
   @media (--media-min-small) {
     font-size: 45px;
     padding-bottom: 70px;
@@ -39,6 +43,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 2rem 0;
+  font-family: 'Heebo';
 }
 
 .grid {
@@ -47,6 +52,7 @@
   margin-right: 0px;
   padding: 0;
   list-style: none;
+  font-family: 'Heebo';
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;

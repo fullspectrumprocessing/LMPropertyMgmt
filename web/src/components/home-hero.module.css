@@ -47,9 +47,52 @@ width: 100vw;
     position: absolute;
     top: 30%;
     color: white;
+     /* font-family: 'Questrial'; */
+  font-family: 'Forum';
+  /* font-family: 'Prata'; */
     @media (--media-min-medium) {
       font-size: 50px;
          }
     
 }
+
+.navText {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  color: white;
+   /* font-family: 'Questrial'; */
+font-family: 'Heebo';
+/* font-family: 'Prata'; */
+
+}
+.bodyText {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  color: white;
+  text-transform: uppercase;
+   /* font-family: 'Questrial'; */
+font-family: 'Heebo';
+/* font-family: 'Prata'; */
+
+}
+.specialText {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  color: white;
+   /* font-family: 'Questrial'; */
+font-family: 'Inter';
+/* font-family: 'Prata'; */
+
+}
+
+
 

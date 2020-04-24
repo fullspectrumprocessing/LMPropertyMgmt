@@ -12,7 +12,7 @@
 
 .headline {
   /* font-size: var(--font-micro-size); */
-  font-size: 16px;
+  font-size: 18px;
   line-height: var(--font-micro-line-height);
   font-weight: 600;
   text-transform: uppercase;
@@ -21,6 +21,7 @@
   /* color: #274076; */
   color: #414751;
   padding-left: 20px;
+  font-family: 'Heebo';
 }
 
 .grid {
@@ -69,8 +70,12 @@ margin-right: 15px; */
   margin-top: 2rem;
   text-align: center;
   /* color: #274076; */
-  color: #414751;
-  font-size: 16px;
+  /* color: #414751; */
+  /* color: #67c8d4; */
+  font-size: 18px;
+  /* font-weight: 600; */
+  font-family: 'Heebo';
+  text-transform: uppercase;
 
 
   @nest & a {
@@ -81,7 +86,7 @@ margin-right: 15px; */
 
     @media (hover: hover) {
       @nest &:hover {
-        color: var(--color-accent);
+       color: #67c8d4;
       }
     }
   }
