@@ -30,6 +30,58 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            options: {
+              fonts: [
+                {
+                    family: `Nunito Sans`,
+                    variants: [`400`, `600`, `800`],
+                  },
+                  {
+                    family: `Montserrat`,
+                    variants: [`300`, `400`, `400`, `500`, `600`],
+                  },
+                  {
+                    family: `Cabin`,
+                    variants: [`400`, `600`, `800`],
+                  },
+                  {
+                    family: `Questrial`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Archivo`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Prata`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Ramabhadra`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Forum`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Reem Kufi`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Heebo`,
+                    variants: [`400`, `700`],
+                  },
+                  {
+                    family: `Inter`,
+                    variants: [`400`, `700`],
+                  },
+                
+              ],
+            },
+          },
+        {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 // The property ID; the tracking code won't be generated without it
@@ -56,6 +108,8 @@ module.exports = {
                 // cookieDomain: "example.com",
             },
         },
+       
+    
         {
             resolve: `gatsby-plugin-manifest`,
             options: {

@@ -20,6 +20,7 @@
 .price {
     /* border-bottom: 3px solid #274076; */
     border-bottom: 3px solid #414751;
+    font-family: 'Heebo';
     padding-bottom: 10px;
 }
 
@@ -57,6 +58,8 @@
     padding-left: 20px;
     /* color: #274076; */
     color: #414751;
+    font-family: 'Heebo';
+    padding-top: 10px;
 }
 .wrapper {
     width: 300px;

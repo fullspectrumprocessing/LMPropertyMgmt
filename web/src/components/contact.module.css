@@ -30,6 +30,7 @@
 
 .title {
     color: #274076;
+    font-family: 'Heebo';
     max-width: 350px;
     margin: 0 auto;
     font-size: 35px;
@@ -37,6 +38,7 @@
 
 .subHeader {
     color: #274076;
+    font-family: 'Heebo';
     max-width: 350px;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -46,6 +48,7 @@
 .contactInfoTextWrap {
 
     color: #274076;
+    font-family: 'Heebo';
   
 }
 .contactLineItem {
@@ -61,6 +64,7 @@
 .outboundLink {
 text-decoration: none !important;
 color: #274076;
+font-family: 'Heebo';
 }
 
 /* a:-webkit-any-link {
