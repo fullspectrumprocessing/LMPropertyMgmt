@@ -42,6 +42,7 @@
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-sharp": "^2.3.14",
-    "infinite-react-carousel": "^1.2.11"
+    "infinite-react-carousel": "^1.2.11",
+    "react-reveal": "^1.2.2"
   }
 }
