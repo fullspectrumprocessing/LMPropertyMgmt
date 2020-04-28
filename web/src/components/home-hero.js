@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 // import heroImage from "../images/lmpmLogo.png";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "./home-hero.module.css";
+import Fade from "react-reveal/Fade"
 
 const HomeHero = () => {
   const data = useStaticQuery(graphql`
@@ -28,7 +29,7 @@ const HomeHero = () => {
           imgStyle={{ objectPosition: "top" }}
         />
         <div className={styles.overlay}></div>
-        <h1 className={styles.headingText}>LMPM tagline goes here</h1>
+        <Fade bottom> <h1 className={styles.headingText}>Tagline for site goes here</h1></Fade>
         {/* <p className={styles.bodyText}>body text</p>
         <p className={styles.navText}>Nav lists look like this</p> */}
        

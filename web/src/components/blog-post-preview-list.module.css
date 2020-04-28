@@ -2,92 +2,97 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  margin: 2em 0 4em;
-  min-height: 500px;
+    margin: 2em 0 4em;
+    min-height: 500px;
 
-  @media (min-width: 550px) {
-    padding-top: 100px;
-   }
+    @media (min-width: 550px) {
+        padding-top: 100px;
+    }
 }
 
 .headline {
-  /* font-size: var(--font-micro-size); */
-  font-size: 18px;
-  line-height: var(--font-micro-line-height);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 2rem 0;
-  /* color: #274076; */
-  color: #414751;
-  padding-left: 20px;
-  font-family: 'Heebo';
+    /* font-size: var(--font-micro-size); */
+    font-size: 18px;
+    line-height: var(--font-micro-line-height);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 2rem 0;
+    /* color: #274076; */
+
+    color: #414751;
+    padding-left: 20px;
+    font-family: 'Heebo';
+    &:hover {
+        color: #67c8d4;
+    }
+}
+
+a {
+    text-decoration: none;
 }
 
 .grid {
-  /* margin: 0;
+    /* margin: 0;
   padding: 0; */
-  list-style: none;
-  /* display: grid;
+    list-style: none;
+    /* display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 2em;
   grid-row-gap: 2em; */
 
-  padding: 0px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  max-width: 320px;
-  overflow-x: scroll;
-
-  /* flex-wrap: wrap ; */
-
-  @media (min-width: 550px) {
-   max-width: 540px;
-   overflow-x: scroll;
-   height: 350px;
-  }
-  @media (min-width: 1130px) {
-    max-width: 1080px;
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
     overflow-x: scroll;
-  }
 
+    /* flex-wrap: wrap ; */
+
+    @media (min-width: 550px) {
+        max-width: 540px;
+        overflow-x: scroll;
+        height: 350px;
+    }
+    @media (min-width: 1130px) {
+        max-width: 1080px;
+        overflow-x: scroll;
+    }
 }
 
 .listing {
-  margin: 0 auto;
+    margin: 0 auto;
 
-/* margin-right: 15px; */
-  @media (min-width: 400px) {
-/* margin-left: 15px;
+    /* margin-right: 15px; */
+    @media (min-width: 400px) {
+        /* margin-left: 15px;
 margin-right: 15px; */
-  }
- 
+    }
 }
 
 .browseMoreNav {
-  composes: small from './typography.module.css';
-  margin-top: 2rem;
-  text-align: center;
-  /* color: #274076; */
-  /* color: #414751; */
-  /* color: #67c8d4; */
-  font-size: 18px;
-  /* font-weight: 600; */
-  font-family: 'Heebo';
-  text-transform: uppercase;
+    composes: small from './typography.module.css';
+    margin-top: 2rem;
+    text-align: center;
+    /* color: #274076; */
+    /* color: #414751; */
+    /* color: #67c8d4; */
+    font-size: 18px;
+    /* font-weight: 600; */
+    font-family: 'Heebo';
+    text-transform: uppercase;
 
+    @nest & a {
+        /* display: inline-block; */
+        /* padding: 0.5rem 0; */
+        color: inherit;
+        text-decoration: none;
 
-  @nest & a {
-    /* display: inline-block; */
-    /* padding: 0.5rem 0; */
-    color: inherit;
-    text-decoration: none;
-
-    @media (hover: hover) {
-      @nest &:hover {
-       color: #67c8d4;
-      }
+        @media (hover: hover) {
+            @nest &:hover {
+                color: #67c8d4;
+            }
+        }
     }
-  }
 }
