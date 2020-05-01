@@ -20,6 +20,9 @@ const Policies = () => {
                             individual in context. Please read our privacy policy carefully to get a
                             clear understanding of how we collect, use, protect or otherwise handle
                             your Personally Identifiable Information in accordance with our website.{' '}
+                            </p>
+                            </div>
+                            <div className={styles.styledDiv}>
                             {/* <a className={styles.a}>http://lmpropertym</a> */}
                             <h2 className={styles.h2}>Possible Personal Information Collected</h2>
                             <p className={styles.p}>Personal information is:
@@ -47,7 +50,7 @@ const Policies = () => {
                                 </ul>
                             </ul></p>
                            
-                        </p>
+                      
                     </div>
                     <div className={styles.styledDiv}>
                         <h2 className={styles.h2}>When do we collect information?</h2>
