@@ -13,7 +13,7 @@
   border-top: 1px solid var(--color-very-light-gray);
   background: #EAEAEA;
   color: #274076;
-  font-family: 'Heebo';
+  font-family: 'Heebo' !important;
   text-decoration: none;
   @nest & a {
     color: #274076;
