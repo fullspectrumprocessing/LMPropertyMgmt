@@ -7,8 +7,6 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-import {responsiveTitle1} from '../components/typography.module.css'
-
 export const query = graphql`
 
 
@@ -61,29 +59,6 @@ query ArchivePageQuery {
   
 `
 
-// query ArchivePageQuery {
-//   posts: allSanityPost(
-//     sort: { fields: [publishedAt], order: DESC }
-//     filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
-//     ) {
-//     edges {
-//       node {
-//         id
-//         publishedAt
-//         mainImage {
-//           ...SanityImage
-//           alt
-//         }
-//         title
-//         _rawExcerpt
-//         slug {
-//           current
-//         }
-//       }
-//     }
-//   }
-// }
-
 const ArchivePage = props => {
   const {data, errors} = props
 
@@ -101,7 +76,6 @@ const ArchivePage = props => {
     <Layout>
       <SEO title='Archive' />
       <Container>
-        {/* <h1 className={responsiveTitle1}>Available Rentals</h1> */}
         {postNodes && postNodes.length > 0 && <BlogPostPreviewGrid nodes={postNodes} />}
       </Container>
     </Layout>

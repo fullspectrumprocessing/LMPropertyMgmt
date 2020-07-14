@@ -11,17 +11,12 @@
 }
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
-  /* background: #274076; */
-  /* background: #C8C8C8; */
-  /* background: #BFD6EF; */
-  /* background: #E0E0E0; */
   background: #EAEAEA;
   color: #274076;
-  font-family: 'Heebo';
+  font-family: 'Heebo' !important;
   text-decoration: none;
   @nest & a {
     color: #274076;
-    /* color: white; */
     text-decoration: none;
 
     @media (hover: hover) {
@@ -41,27 +36,16 @@
   margin: 0 auto;
   padding: 10px;
   font-size: 12px;
-
   @media (min-width: 600px) {
     font-size: 16px;
   }
-  
-
 }
-
-/* .navItem:hover {
-  color: pink;
-} */
 
 .footerWrapper {
   box-sizing: border-box;
   max-width: 1366px;
   padding: 3em 1.5em 1.5em;
   margin: 0 auto;
-
-  @media (--media-min-small) {
-    /* padding: 6em 2em 2em; */
-  }
 }
 .wrap {
   margin: 0 auto;
