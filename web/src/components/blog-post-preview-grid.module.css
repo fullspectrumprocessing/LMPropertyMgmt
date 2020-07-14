@@ -9,7 +9,7 @@
   /* color: #274076; */
   /* color: #414751; */
   color: #66C8D4;
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
   font-size: 40px;
   width: 300px;
   margin: 0 auto;
@@ -43,7 +43,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 2rem 0;
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
 }
 
 .grid {
@@ -52,7 +52,7 @@
   margin-right: 0px;
   padding: 0;
   list-style: none;
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;

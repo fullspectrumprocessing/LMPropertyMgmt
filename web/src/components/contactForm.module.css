@@ -34,7 +34,7 @@ background: pink;
 .styledArea {
     /* color: #274076; */
     color: white;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     padding: 20px;
     width: 80%;
     display: block;
@@ -58,7 +58,7 @@ display: block;
 /* color: #274076; */
 color: white;
 background-color: #274076;
-font-family: 'Heebo';
+/* font-family: 'Heebo'; */
 padding: 20px;
 width: 80%;
 display: block;
@@ -78,7 +78,7 @@ height: auto;
 
 ::placeholder {
     color: #67c8d4;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
   font-size: 20px;
   overflow: visible;
   }
@@ -86,7 +86,7 @@ height: auto;
 .styledButton {
     color: #274076;
     display: block;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     text-transform: uppercase;
     margin: 0 auto;
     margin-top: 30px;
