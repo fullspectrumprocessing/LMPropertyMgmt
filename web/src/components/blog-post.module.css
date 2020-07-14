@@ -74,7 +74,7 @@
 
 .mainContent {
   color: #414751;
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
   @nest & a {
     color: var(--color-accent);
 
@@ -101,14 +101,14 @@
 
 .metaContent {
   color: #414751;
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
 }
 
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 2rem 0 3rem;
   color: var(--color-gray);
-  font-family: 'Heebo';
+  /* font-family: 'Heebo'; */
 }
 
 .categories {

@@ -19,7 +19,7 @@
     margin: 0 auto;
     text-align: center;
     color: #274076;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     @media (min-width: 550px) {
         padding: 20px;
     }
@@ -42,7 +42,7 @@
     text-transform: uppercase;
     /* display: inline-block; */
     background: #67c8d4;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     margin-top: 10px;
     color: #274076;
     border-radius: 4px;
@@ -101,7 +101,7 @@
     /* background: black; 
     opacity: .85; */
     background: #274076;
-    font-family: 'Heebo';
+    /* sfont-family: 'Heebo'; */
     /* background: #67C8D4; */
     @media (min-width: 950px) {
         width: 50%; 

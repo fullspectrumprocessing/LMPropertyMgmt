@@ -64,23 +64,24 @@ width: 100vw;
   top: 45%;
   color: white;
    /* font-family: 'Questrial'; */
-font-family: 'Heebo';
+/* font-family: 'Heebo'; */
 /* font-family: 'Prata'; */
 
 }
-.bodyText {
+
+/* .bodyText {
   font-size: 30px;
   text-align: center;
   width: 100%;
   position: absolute;
   top: 40%;
   color: white;
-  text-transform: uppercase;
+  text-transform: uppercase; */
    /* font-family: 'Questrial'; */
-font-family: 'Heebo';
+/* font-family: 'Heebo'; */
 /* font-family: 'Prata'; */
 
-}
+/* }  */
 .specialText {
   font-size: 30px;
   text-align: center;

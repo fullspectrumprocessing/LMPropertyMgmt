@@ -15,7 +15,7 @@
 }
 
 .wrapper {
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     position: relative;
     margin-bottom: -72px;
     color: #414751;
@@ -65,7 +65,7 @@
     word-spacing: 2.5px;
     letter-spacing: 0.5px;
     line-height: 25px;
-    font-family: 'Heebo';
+    /* font-family: 'Heebo'; */
     @media (max-width: 572px) {
         text-align: left;
     }
