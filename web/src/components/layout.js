@@ -56,7 +56,6 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
                         <li>Philadelphia, PA 19106</li>
                         <li>(267) 465-9012</li>
                         <li>support@lmpropertymgmt.com</li>
-                        {/* <li>Home</li> */}
                       </ul>
                     </div>
                     </div>

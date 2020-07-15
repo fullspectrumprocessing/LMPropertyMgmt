@@ -2,16 +2,15 @@
 @import '../styles/custom-properties.css';
 
 .contactInfoContainer {
-  max-width: 1366px;
-  margin: 0 auto;
-  margin-bottom: 70px;
-  background-color: #FCFCFC;
-  @media (min-width: 900px){
-    display: flex;
-    flex-direction: row;  
-    margin-bottom: 0px;
-   
-  }
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background-color: #fcfcfc;
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
 }
 
 .contactInfoWrap {
@@ -20,25 +19,23 @@
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
-    @media (min-width: 900px){
+    @media (min-width: 900px) {
         width: 50%;
         text-align: left;
         margin-top: 120px;
-        min-height: 400px;  
-      }
+        min-height: 400px;
+    }
 }
 
 .title {
-    color: #274076;
-    /* font-family: 'Heebo'; */
+    color: var(--color-navy);
     max-width: 350px;
     margin: 0 auto;
     font-size: 35px;
 }
 
 .subHeader {
-    color: #274076;
-    /* font-family: 'Heebo'; */
+    color: var(--color-navy);
     max-width: 350px;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -46,10 +43,7 @@
 }
 
 .contactInfoTextWrap {
-
-    color: #274076;
-    /* font-family: 'Heebo'; */
-  
+    color: var(--color-navy);
 }
 .contactLineItem {
     max-width: 350px;
@@ -57,17 +51,11 @@
     padding: 5px;
     letter-spacing: 1.3px;
     &:hover {
-      color: #67c8d4;
+        color: #67c8d4;
     }
 }
 
 .outboundLink {
-text-decoration: none !important;
-color: #274076;
-/* font-family: 'Heebo'; */
+    text-decoration: none !important;
+    color: var(--color-navy);
 }
-
-/* a:-webkit-any-link {
-  text-decoration: none;
- 
-} */

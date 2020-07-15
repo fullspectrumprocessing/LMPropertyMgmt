@@ -1,132 +1,124 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
-.root { 
-  background-color: #FCFCFC;
+.root {
+    background-color: #fcfcfc;
 }
 
 .title {
-  composes: responsiveTitle1 from './typography.module.css';
+    composes: responsiveTitle1 from './typography.module.css';
 }
 
 .imageWrap {
-  width: 100%;
-  position: relative;
-  background: #414751;
-  /* background: white; */
-  height: 100%;
-
+    width: 100%;
+    position: relative;
+    background: var(--color-dark-gray);
+    height: 100%;
 }
 .carousel-dots li button:before {
-  color: white !important;
+    color: white !important;
 }
 
 .mainImage {
-  display: block;
-  position: relative;
-  background: var(--color-very-light-gray);
-  padding-bottom: calc(11 / 16 * 100%);
-
-  @nest & img {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    object-fit: cover;
-  }
+    position: relative;
+    background: var(--color-very-light-gray);
+    padding-bottom: calc(11 / 16 * 100%);
+
+    @nest & img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        object-fit: cover;
+    }
 }
 
 .imagesDiv {
-  display: flex;
-  position: relative;
-  flex-direction: row;
+    display: flex;
+    position: relative;
+    flex-direction: row;
 }
 
 .sliderWrapper {
-  position: relative;
-  max-width: 800px;
-  background: #414751;
-  /* background: white; */
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 15px;
+    position: relative;
+    max-width: 800px;
+    background: var(--color-dark-gray);
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
 }
 
 .carousel-dots {
-  color: white;
+    color: white;
 }
 .grid {
- padding: 50px 50px 100px 50px;
+    padding: 50px 50px 100px 50px;
 
-
-
-  @media (--media-min-medium) {
-    padding: 100px 50px 100px 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 2em;
-    grid-template-columns: 3fr 1fr;
-  }
+    @media (--media-min-medium) {
+        padding: 100px 50px 100px 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2em;
+        grid-template-columns: 3fr 1fr;
+    }
 }
 
 .mainContent {
-  color: #414751;
-  /* font-family: 'Heebo'; */
-  @nest & a {
-    color: var(--color-accent);
+    color: var(--color-dark-gray);
+    @nest & a {
+        color: var(--color-accent);
 
-    @media (hover: hover) {
-      @nest &:hover {
-        color: inherit;
-      }
+        @media (hover: hover) {
+            @nest &:hover {
+                color: inherit;
+            }
+        }
     }
-  }
 
-  @nest & h2, & h3, & h4, & h5, & h6 {
-    font-weight: 600;
-  }
-
-  @nest & figure {
-    margin: 0;
-    padding: 0;
-
-    @nest & img {
-      max-width: 100%;
+    @nest & h2, & h3, & h4, & h5, & h6 {
+        font-weight: 600;
     }
-  }
+
+    @nest & figure {
+        margin: 0;
+        padding: 0;
+
+        @nest & img {
+            max-width: 100%;
+        }
+    }
 }
 
 .metaContent {
-  color: #414751;
-  /* font-family: 'Heebo'; */
+    color: var(--color-dark-gray);
 }
 
 .publishedAt {
-  composes: small from './typography.module.css';
-  margin: 2rem 0 3rem;
-  color: var(--color-gray);
-  /* font-family: 'Heebo'; */
+    composes: small from './typography.module.css';
+    margin: 2rem 0 3rem;
+    color: var(--color-gray);
 }
 
 .categories {
-  border-top: 1px solid var(--color-very-light-gray);
-  margin: 2rem 0 3rem;
+    border-top: 1px solid var(--color-very-light-gray);
+    margin: 2rem 0 3rem;
 
-  @nest & ul {
-    list-style: none;
-    margin: 0.75rem 0;
-    padding: 0;
-  }
+    @nest & ul {
+        list-style: none;
+        margin: 0.75rem 0;
+        padding: 0;
+    }
 
-  @nest & ul li {
-    padding: 0.25rem 0;
-  }
+    @nest & ul li {
+        padding: 0.25rem 0;
+    }
 }
 
 .categoriesHeadline {
-  composes: base from './typography.module.css';
-  margin: 0.5rem 0 0;
+    composes: base from './typography.module.css';
+    margin: 0.5rem 0 0;
 }
