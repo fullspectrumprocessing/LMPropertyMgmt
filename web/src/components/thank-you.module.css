@@ -9,12 +9,11 @@
 .title {
     text-align: center;
     font-size: 50px;
-    color: #274076;
+    color: var(--color-navy);
     position: absolute;
     margin: 0 auto;
     width: 300px;
     top: 150px;
-    /* width: 700px; */
     left: 50%;
     margin-left: -150px;
     font-weight: 800;

@@ -1,15 +1,9 @@
 import React from 'react'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
 import Img from 'gatsby-image'
-// import { getFluidGatsbyImage } from "gatsby-source-sanity";
-// import clientConfig from "../../client-config";
-// import heroImage from "../images/lmpmLogo.png";
 import { useStaticQuery, graphql } from 'gatsby'
 import styles from './home-text-sec.module.css'
 import { Link } from 'gatsby'
 import Slider from 'infinite-react-carousel'
-
 
 const HomeTextSec = () => {
     const data = useStaticQuery(graphql`
@@ -52,12 +46,11 @@ const HomeTextSec = () => {
                     <p>Our responsive team is here to talk to you. </p>
                 </div>
                 <div className={styles.buttonA}>
-                <Link to="/contact" className={styles.link}>
-                    <button className={styles.contactButton}>Contact Us</button>
-                </Link>
+                    <Link to="/contact" className={styles.link}>
+                        <button className={styles.contactButton}>Contact Us</button>
+                    </Link>
                 </div>
             </div>
-
 
             <div className={styles.secWrapper}>
                 <div className={styles.textBox}>
@@ -70,7 +63,7 @@ const HomeTextSec = () => {
                     </p>
                 </div>
 
-                  <Slider dots className={styles.slider} arrows={false} swipe={true}>
+                <Slider dots className={styles.slider} arrows={false} swipe={true}>
                     <div className={styles.imageWrap}>
                         <Img
                             className={styles.image}
@@ -101,41 +94,27 @@ const HomeTextSec = () => {
                     </div>
                 </Slider>
                 <style jsx>{`
-   .carousel-dots li   button:before {
-    color: white !important;
-    opacity: .6 !important;
-   
-  }
+                    .carousel-dots li button:before {
+                        color: white !important;
+                        opacity: 0.6 !important;
+                    }
 
-  // .carousel-dots button {
-  //   opacity: .6;
-  // }
-  .carousel-dots li  active button {
-    color: white !important;
-    // opacity: .9 !important;
-   
-  }
+                    .carousel-dots li active button {
+                        color: white !important;
+                    }
 
-  .carousel-dots li.carousel-dots-active button:before {
-    opacity: .9 !important;
-  }
+                    .carousel-dots li.carousel-dots-active button:before {
+                        opacity: 0.9 !important;
+                    }
 
-  // .carousel-arrow button:before {
-  //   color: white !important;
-  //   // opacity: .3 !important;
-  // }
-
-  .carousel-dots {
-    position: absolute !important;
-    left: 0% !important;
-    right: 25% !important;
-    z-index: 100 !important;
-    bottom: 10px !important;
-    // opacity: 1 !important;
-
-  }
-  
-   `}</style>
+                    .carousel-dots {
+                        position: absolute !important;
+                        left: 0% !important;
+                        right: 25% !important;
+                        z-index: 100 !important;
+                        bottom: 10px !important;
+                    }
+                `}</style>
             </div>
         </>
     )

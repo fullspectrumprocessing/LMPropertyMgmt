@@ -5,7 +5,7 @@ import styles from "./contactForm.module.css"
 
 
 export const ContactForm = () => {
-  // function that maps through the data that will be sent through netlify
+
   function encode(data) {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -44,7 +44,6 @@ export const ContactForm = () => {
     <>
     <div className={styles.formContainer}>
       <div className={styles.formWrap}>
-        {/* <Fade right> */}
           <form className={styles.styledForm}
             onSubmit={submission}
             className="form"
@@ -100,7 +99,6 @@ export const ContactForm = () => {
             />
             <button className={styles.styledButton} type="submit">Submit</button>
           </form>
-         {/* </Fade> */}
       </div>
       </div>
     </>

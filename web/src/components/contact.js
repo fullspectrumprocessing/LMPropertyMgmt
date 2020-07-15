@@ -1,12 +1,8 @@
 import React from 'react'
-import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
 import styles from './contact.module.css'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-const Contact = props => {
-   
-
+const Contact = (props) => {
     return (
         <>
             <div className={styles.contactInfoContainer}>
@@ -29,9 +25,7 @@ const Contact = props => {
                             href="mailto:rrosario@LMPropertyMgmt.com"
                             className={styles.outboundLink}
                         >
-                            <p className={styles.contactLineItem}>
-                                rrosario@LMPropertyMgmt.com
-                            </p>
+                            <p className={styles.contactLineItem}>rrosario@LMPropertyMgmt.com</p>
                         </OutboundLink>
                     </div>
                 </div>
@@ -56,9 +50,7 @@ const Contact = props => {
                             href="mailto:info@LMPropertyMgmt.com"
                             className={styles.outboundLink}
                         >
-                            <p className={styles.contactLineItem}>
-                                info@LMPropertyMgmt.com
-                            </p>
+                            <p className={styles.contactLineItem}>info@LMPropertyMgmt.com</p>
                         </OutboundLink>
                     </div>
                 </div>

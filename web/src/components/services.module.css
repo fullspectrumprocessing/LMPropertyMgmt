@@ -33,12 +33,10 @@
 }
 .title {
     text-align: center;
-    color: #67c8d4;
-    /* font-family: 'Heebo'; */
+    color: var(--color-accent);
 }
 
 .p {
     text-align: center;
-    color: #274076;
-    /* font-family: 'Heebo'; */
+    color: var(--color-navy);
 }

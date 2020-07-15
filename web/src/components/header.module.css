@@ -2,137 +2,129 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  position: relative;
-  z-index: 100;
+    position: relative;
+    z-index: 100;
 }
 
 .active {
-  color: #66c8d4;
+    color: var(--color-accent);
 }
 
 .wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0em;
-  display: flex;
-  position: relative;
- 
-  @media (--media-min-medium) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
     padding: 0em;
-  }
+    display: flex;
+    position: relative;
+
+    @media (--media-min-medium) {
+        padding: 0em;
+    }
 }
 
 .image {
-  width: 220px;
-  height: auto;
+    width: 220px;
+    height: auto;
 }
 
 .branding {
-  font-weight: 600;
-  flex: 1;
+    font-weight: 600;
+    flex: 1;
 
-  @nest & a {
-    display: inline-block;
-    /* padding: 0.5em; */
-    color: inherit;
-    text-decoration: none;
+    @nest & a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
 
-    @media (hover: hover) {
-      @nest &:hover {
-        color: var(--color-accent);
-      }
+        @media (hover: hover) {
+            @nest &:hover {
+                color: var(--color-accent);
+            }
+        }
     }
-  }
 }
 
 .toggleNavButton {
-  appearance: none;
-  font-size: 25px;
-  border: none;
-  background: none;
-  margin: 0;
-  padding: calc(14 / 17 / 2 * 1rem);
-  outline: none;
-  color: inherit;
+    appearance: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: calc(14 / 17 / 2 * 1rem);
+    outline: none;
+    color: inherit;
 
-  & svg {
-    display: block;
-    fill: inherit;
-  }
+    & svg {
+        display: block;
+        fill: inherit;
+    }
 
-  @media (--media-min-medium) {
-    display: none;
-  }
+    @media (--media-min-medium) {
+        display: none;
+    }
 }
 
 .nav {
-  display: none;
-  color: #274076;
-  /* font-family: 'Heebo'; */
-  /* text-transform: uppercase; */
-  /* font-family: 'Nunito Sans'; */
-
-  @nest & ul {
-    margin: 0;
-    padding-top: 28px;
-    padding-right: 30px;
-  }
-
-  @nest & ul li a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  @media (hover: hover) {
-    @nest & ul li a:hover {
-      color: #67c8d4;
-      
-    }
-  }
-
-  @media (max-width: 675px) {
-    position: absolute;
-    /* background: var(--color-white); */
-    height: 100vh;
-    /* color: var(--color-black); */
-    /* color: #274076; */
-    color: white;
-    background: #274076;
-    font-size: 45px;
-    font-weight: 700;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    left: 0;
-    right: 0;
-    top: 4.3rem;
-    z-index: 420;
+    display: none;
+    color: var(--color-navy);
 
     @nest & ul {
-      padding: 1rem 0;
-      text-align: right;
+        margin: 0;
+        padding-top: 28px;
+        padding-right: 30px;
     }
 
     @nest & ul li a {
-      padding: 0.5rem 1.5rem;
-    }
-  }
-
-  @media (--media-min-medium) {
-    display: block;
-
-    @nest & ul {
-      list-style: none;
-      display: flex;
-      justify-content: flex-end;
+        display: block;
+        color: inherit;
+        text-decoration: none;
     }
 
-    @nest & ul li a {
-      padding: 0.5rem;
+    @media (hover: hover) {
+        @nest & ul li a:hover {
+            color: var(--color-navy);
+        }
     }
-  }
+
+    @media (max-width: 675px) {
+        position: absolute;
+        height: 100vh;
+        color: white;
+        background: var(--color-navy);
+        font-size: 45px;
+        font-weight: 700;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        left: 0;
+        right: 0;
+        top: 4.3rem;
+        z-index: 420;
+
+        @nest & ul {
+            padding: 1rem 0;
+            text-align: right;
+        }
+
+        @nest & ul li a {
+            padding: 0.5rem 1.5rem;
+        }
+    }
+
+    @media (--media-min-medium) {
+        display: block;
+
+        @nest & ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @nest & ul li a {
+            padding: 0.5rem;
+        }
+    }
 }
 
 .showNav {
-  display: block;
+    display: block;
 }
